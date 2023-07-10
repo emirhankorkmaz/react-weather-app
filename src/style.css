@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::placeholder{
+  color: #fff;
+}
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+    background-color: #171E2D;
+    color: #0EA5E9;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myBox{
+  width: 85%;
+  height: 85vh;
+  background-color: #1F2937;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.loading{
+    position: relative;
+    display: flex;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading-inner{
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  
+  @keyframes spin{
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-inner{
+    animation: spin 1s linear infinite;
+    border-radius: 0.25rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgba(99, 102, 241, var(--tw-border-opacity));
+    transition-duration: 300ms;
+  }
+
+  .CurrentData{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #111827;
+    justify-content: center;
+    align-items: center;
+  }
+  .allCurrent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+  }
+  .allCurrent input{
+    outline: 0;
+    border: none;
+    border-bottom: 5px solid black;
+    margin: 15px 0;
+    font-size: large;
+    cursor: pointer;
+    background-color: #5b6569;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+  }
+  .allCurrent figure{
+    width: 250px;
+    height: 250px;
+    margin: 1rem 0;
+  }
+  .allCurrent .Temp{
+    font-size: 4rem;
+    border: 1px solid #5b6569;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    margin: 0 0 1rem 0;
+  }
+  .allCurrent div h3{
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+  }
+  .allCurrent .ToDay{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 20% 1rem 20%;
+    border-bottom: 1px solid #5b6569;
+  }
+  .allCurrent .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .allCurrent .rain p{
+    font-size: 1rem;
+  }
+  .allCurrent .rain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .allCurrent .desc p{
+    font-size: 1rem;
+  }
+  .allCurrent .rain img{
+    width: 20%;
+  }
+  .WeatherData{
+    width: 75%;
+    height: 100%;
+    background-color: #111821;
+    display: flex;
+    flex-direction: column;
+  }
+  .WeatherData .data-title{
+    text-align: center;
+    margin-top: 5rem;
+  }
+.ikiyebol{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.Tempratures{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maxTemp{
+  width: 250px;
+  height: 250px;
+  display: flex;
+}
+.maxTemp p{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.minTemp{
+  width: 250px;
+  height: 250px;
+  display: flex;
+}
+.minTemp p{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Humidity{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Humidity .humdata{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.humdata p{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Humidity .humhow{
+  margin-top: 1.5rem;
+  width: 250px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.humhow p{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
